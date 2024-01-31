@@ -16,9 +16,9 @@ type SettingsPropsType = {
 export const Settings: React.FC<SettingsPropsType> = (props) => {
     const {setSettings, isValidMax, isValidStart} = props
 
-    const start = useSelector<RootReducerType, number>(state => state.counterReducer.start);
-    const status = useSelector<RootReducerType, boolean>(state => state.counterReducer.status);
-    const max = useSelector<RootReducerType, number>(state => state.counterReducer.max);
+    const start = useSelector<RootReducerType, number>(state => state.counterR.start);
+    const status = useSelector<RootReducerType, boolean>(state => state.counterR.status);
+    const max = useSelector<RootReducerType, number>(state => state.counterR.max);
 
     const dispatch = useDispatch();
 

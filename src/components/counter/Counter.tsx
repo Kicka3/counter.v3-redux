@@ -12,10 +12,10 @@ type CounterPropsType = {
 }
 
 export const Counter: React.FC<CounterPropsType> = (props) => {
-    const disableBtn = useSelector<RootReducerType, boolean>(state => state.counterReducer.disableBtn);
-    const max = useSelector<RootReducerType, number>(state => state.counterReducer.max);
-    const start = useSelector<RootReducerType, number>(state => state.counterReducer.start);
-    const counterValue = useSelector<RootReducerType, number>(state => state.counterReducer.counterValue);
+    const disableBtn = useSelector<RootReducerType, boolean>(state => state.counterR.disableBtn);
+    const max = useSelector<RootReducerType, number>(state => state.counterR.max);
+    const start = useSelector<RootReducerType, number>(state => state.counterR.start);
+    const counterValue = useSelector<RootReducerType, number>(state => state.counterR.counterValue);
 
     const {incBtn, resetCount} = props
 

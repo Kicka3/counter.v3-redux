@@ -12,9 +12,9 @@ export type counterValue = {
 }
 
 function App() {
-    const counterValue = useSelector<RootReducerType, number>(state => state.counterReducer.counterValue);
-    const max = useSelector<RootReducerType, number>(state => state.counterReducer.max);
-    const start = useSelector<RootReducerType, number>(state => state.counterReducer.start);
+    const counterValue = useSelector<RootReducerType, number>(state => state.counterR.counterValue);
+    const max = useSelector<RootReducerType, number>(state => state.counterR.max);
+    const start = useSelector<RootReducerType, number>(state => state.counterR.start);
 
     const dispatch = useDispatch();
 

@@ -5,11 +5,11 @@ import {RootReducerType} from "../../store/store";
 
 export const DisplayCounter = () => {
 
-    const counterValue = useSelector<RootReducerType, number>(state => state.counterReducer.counterValue);
-    const max = useSelector<RootReducerType, number>(state => state.counterReducer.max);
-    const start = useSelector<RootReducerType, number>(state => state.counterReducer.start);
-    const status = useSelector<RootReducerType, boolean>(state => state.counterReducer.status);
-    const disableBtn = useSelector<RootReducerType, boolean>(state => state.counterReducer.disableBtn);
+    const counterValue = useSelector<RootReducerType, number>(state => state.counterR.counterValue);
+    const max = useSelector<RootReducerType, number>(state => state.counterR.max);
+    const start = useSelector<RootReducerType, number>(state => state.counterR.start);
+    const status = useSelector<RootReducerType, boolean>(state => state.counterR.status);
+    const disableBtn = useSelector<RootReducerType, boolean>(state => state.counterR.disableBtn);
 
     // reduxReselect узнать
 
