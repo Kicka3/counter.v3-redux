@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {Counter} from "./components/counter/Counter";
 import {Settings} from "./components/settings/Settings";
-import {incrementAC, resetAC, setCurrentValueAC, setStatusAC} from "./reducers/CounterReducer";
+import {incrementAC, resetAC, setStatusAC} from "./reducers/CounterReducer";
 import {useDispatch, useSelector} from "react-redux";
 import {RootReducerType} from "./store/store";
 
@@ -42,7 +42,7 @@ function App() {
         // localStorage.setItem('maxValue', `${max}`);                    //Закидываю в storage по нажатию на SET
         // localStorage.setItem('startValue', `${start}`);                //Закидываю в storage по нажатию на SET
 
-        dispatch(setCurrentValueAC(start));
+        // dispatch(setCurrentValueAC(start));
         dispatch(setStatusAC(false));
         console.log(`setSettings - тут закидываю число: ${start} в сторэдж`);
     }
